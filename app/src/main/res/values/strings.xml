@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SliderAmbulan</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">LANJUT</string>
+    <string name="skip">LEWATI</string>
+    <string name="start">MULAI</string>
+    <string name="google_maps_key">AIzaSyBlJ_FvraysdnUdmuidASzqkHRC8QGK7dc</string>
+
+    <string name="slide_1_title">UPDATE JUMLAH TERKONFIRMASI</string>
+    <string name="slide_1_desc">Jumlah korban terkonfirmasi virus corona</string>
+    <string name="slide_2_title">CEK RUMAH SAKIT RUJUKAN</string>
+    <string name="slide_2_desc">Informasi rumah sakit rujukan di Kota Tegal</string>
+    <string name="slide_3_title">PESAN AMBULAN</string>
+    <string name="slide_3_desc">Melakukan pemesanan ambulan untuk penanganan covid-19 maupun penyakit selain covid-19</string>
+    <string name="slide_4_title">PROFIL PENGGUNA</string>
+    <string name="slide_4_desc">Profil pengguna aplikasi yang terkoneksi dengan database gugus tugas penanganan covid-19</string>
+    <string name="contoh_rute_penanganan_rsud_kardinah_sma_1_tegal">Contoh Rute Penanganan RSUD Kardinah-SMA 1 Tegal</string>
+
+</resources>

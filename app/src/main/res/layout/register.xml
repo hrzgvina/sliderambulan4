@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90EE90">
+
+    <RelativeLayout
+        android:id="@+id/rl_input"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/sp_rectangle_root"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <EditText
+                android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+                android:drawablePadding="40dp"
+                android:id="@+id/et_username"
+                android:hint="Username"
+                android:backgroundTint="#FFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <View
+                android:id="@+id/v_separator"
+                android:layout_below="@id/et_username"
+                android:background="#90EE90"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp">
+            </View>
+            <EditText
+                android:id="@+id/pw"
+                android:layout_below="@id/v_separator"
+                android:drawableLeft="@drawable/ic_baseline_lock_open_24"
+                android:drawablePadding="40dp"
+                android:hint="******"
+                android:backgroundTint="#FFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <View
+
+                android:id="@+id/v_separator2"
+                android:layout_below="@id/pw"
+                android:background="#90EE90"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp">
+            </View>
+            <EditText
+                android:id="@+id/email"
+                android:layout_below="@id/v_separator2"
+                android:drawableLeft="@drawable/ic_baseline_mail_outline_24"
+                android:drawablePadding="40dp"
+                android:hint="Email"
+                android:backgroundTint="#FFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_below="@id/rl_input"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginBottom="50dp"
+        android:background="#2e8b57"
+        android:textColor="#fff"
+        android:text="Register"/>
+    <Button
+        android:layout_above="@id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:background="#90ee90"
+        android:layout_marginBottom="300dp"
+        android:layout_marginLeft="300dp"
+        />
+
+</RelativeLayout>
