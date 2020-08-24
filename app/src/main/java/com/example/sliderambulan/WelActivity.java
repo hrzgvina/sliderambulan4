@@ -20,14 +20,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-public class WelcomeActivity extends AppCompatActivity {
+
+public class WelActivity extends AppCompatActivity {
     private ViewPager viewPager;
     private MyViewPagerAdapter myViewPagerAdapter;
     private LinearLayout dotsLayout;
     private TextView[] dots;
     private int[] layouts;
     private Button btnSkip, btnNext;
-    private PrefManager prefManager;
+    private PrefManag prefManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +36,7 @@ public class WelcomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         //mengecek launch activity - sebelum memanggil setContentView()
-        prefManager = new PrefManager(this);
+        prefManager = new PrefManag(this);
         if (!prefManager.isFirstTimeLaunch()) {
             launchHomeScreen();
             finish();
@@ -122,7 +123,7 @@ public class WelcomeActivity extends AppCompatActivity {
     //melakukan launchhomescreen
     private void launchHomeScreen () {
         prefManager.setIsFirstTimeLaunch(false);
-        startActivity(new Intent(WelcomeActivity.this, MainActivity.class));
+        startActivity(new Intent(WelActivity.this, MainActivity.class));
         finish();
         }
     //viewpager change listener

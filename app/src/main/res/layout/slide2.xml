@@ -2,9 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_screen2">
+    android:background="#90ee90"
+    android:clickable="true">
 
     <LinearLayout
+        android:id="@+id/layout_rs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -14,27 +16,36 @@
         <ImageView
             android:layout_width="@dimen/img_width_height"
             android:layout_height="@dimen/img_width_height"
-            android:src="@drawable/rs"/>
+            android:src="@drawable/rs" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/slide_2_title"
-            android:textColor="#FFF"
+            android:textColor="#000000"
             android:textSize="20dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
             android:paddingLeft="@dimen/desc_padding"
             android:paddingRight="@dimen/desc_padding"
             android:text="@string/slide_2_desc"
             android:textAlignment="center"
-            android:textColor="#FFF"
-            android:gravity="center_horizontal"
-            android:textSize="@dimen/slide_desc"/>
+            android:textColor="#000000"
+            android:textSize="@dimen/slide_desc" />
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_cekdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_rs"
+        android:layout_centerInParent="true"
+        android:text="CEK DAFTAR" />
 
 </RelativeLayout>

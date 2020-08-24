@@ -5,7 +5,7 @@ import android.content.SharedPreferences;
 
 
 
-public class PrefManager {
+public class PrefManag {
     SharedPreferences pref;
     SharedPreferences.Editor editor;
     Context _context;
@@ -18,7 +18,7 @@ public class PrefManager {
 
     private static final String IS_FIRST_TIME_LAUNCH = "IsFirstTimeLaunch";
 
-    public PrefManager(Context context ) {
+    public PrefManag(Context context ) {
         this._context = context;
         pref = _context.getSharedPreferences(PREF_NAME, PRIVATE_MODE);
         editor = pref.edit();

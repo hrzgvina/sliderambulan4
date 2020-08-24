@@ -3,11 +3,9 @@ package com.example.sliderambulan;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Button button;
@@ -20,9 +18,9 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                PrefManager prefManager = new PrefManager(getApplicationContext());
+                PrefManag prefManager = new PrefManag(getApplicationContext());
                 prefManager.setIsFirstTimeLaunch(true);
-                startActivity(new Intent(MainActivity.this, WelcomeActivity.class));
+                startActivity(new Intent(MainActivity.this, WelActivity.class));
                 finish();
             }
         });
@@ -41,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
     //menjalankan image showJalur yang dialihkan ke aktivitas lain dengan menggunakan intent dimana aktivitas yaitu RouteActivity
     public void showJalur(View view) {
-        Intent intent = new Intent(this, RouteActivity.class);
+        Intent intent = new Intent(this, RuteActivity.class);
         startActivity(intent);
     }
 }

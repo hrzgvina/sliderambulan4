@@ -35,28 +35,13 @@
                 android:backgroundTint="#FFF"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
-            <View
 
-                android:id="@+id/v_separator2"
-                android:layout_below="@id/pw"
-                android:background="#90EE90"
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp">
-            </View>
-            <EditText
-                android:id="@+id/email"
-                android:layout_below="@id/v_separator2"
-                android:drawableLeft="@drawable/ic_baseline_mail_outline_24"
-                android:drawablePadding="40dp"
-                android:hint="Email"
-                android:backgroundTint="#FFF"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
 
     </RelativeLayout>
 
     <Button
         android:id="@+id/btn_register"
+
         android:layout_below="@id/rl_input"
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
@@ -66,15 +51,16 @@
         android:textColor="#fff"
         android:text="Register"/>
     <Button
-        android:layout_above="@id/btn_register"
+        android:layout_below="@id/btn_register"
+        android:id="@+id/btn_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="10sp"
         android:text="Login"
         android:textAllCaps="false"
-        android:background="#90ee90"
+        android:background="#2e8b57"
         android:layout_marginBottom="300dp"
-        android:layout_marginLeft="300dp"
+        android:layout_centerHorizontal="true"
         />
 
 </RelativeLayout>
